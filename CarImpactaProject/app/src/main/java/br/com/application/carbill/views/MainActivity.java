@@ -1,4 +1,4 @@
-package br.com.application.carbill;
+package br.com.application.carbill.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,6 +18,11 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;
+
+import br.com.application.carbill.R;
+import br.com.application.carbill.adapters.AdapterTuplaPessoaTelaInicial;
+import br.com.application.carbill.models.Classe_tb_tipo;
+import br.com.application.carbill.models.PessoaResumoTelaInical;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -157,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
             //System.out.println(">>>>> Total das dividas: " + total_das_dividas + "\n");
             listviewTelaInicial.setAdapter(adapter);
             String valorFormatado = NumberFormat.getCurrencyInstance().format(total_das_dividas);
-            textValorTotal.setText("TOTAL\n" + valorFormatado);
+            textValorTotal.setText("TOTAL A SER PAGO\n" + valorFormatado);
             banco.close();
 
         }catch (Exception e){

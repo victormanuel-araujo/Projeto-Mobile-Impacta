@@ -1,10 +1,9 @@
-package br.com.application.carbill;
+package br.com.application.carbill.views;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
@@ -17,9 +16,13 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.ArrayList;
+
+import br.com.application.carbill.adapters.AdpterTuplaHistoricoTelaInfo;
+import br.com.application.carbill.models.HistoricoDeViagem;
+import br.com.application.carbill.models.PessoaResumoTelaInfo;
+import br.com.application.carbill.R;
 
 public class TelaInfoPerson extends AppCompatActivity {
 
@@ -141,7 +144,7 @@ public class TelaInfoPerson extends AppCompatActivity {
             // ---------------------------------------------------------------------------------------//
             txtNome.setText(pessoa.getNome() + " " +pessoa.getSobrenome());
             txtApelido.setText("Vulgo " + pessoa.getApelido());
-            String valorFormatado_PorCorrida = NumberFormat.getCurrencyInstance().format(pessoa.valor_por_corrida);
+            String valorFormatado_PorCorrida = NumberFormat.getCurrencyInstance().format(pessoa.getValor_por_corrida());
             txtValorPorViagem.setText("Paga "+ valorFormatado_PorCorrida + " por viagem");
 
             Cursor CursorTwo = banco.rawQuery("SELECT SUM(valor) Total FROM TB_PESSOA " +

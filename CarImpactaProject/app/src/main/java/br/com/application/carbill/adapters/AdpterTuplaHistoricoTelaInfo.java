@@ -1,4 +1,4 @@
-package br.com.application.carbill;
+package br.com.application.carbill.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,9 +7,11 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.ArrayList;
+
+import br.com.application.carbill.models.HistoricoDeViagem;
+import br.com.application.carbill.R;
 
 public class AdpterTuplaHistoricoTelaInfo extends ArrayAdapter<HistoricoDeViagem> {
 

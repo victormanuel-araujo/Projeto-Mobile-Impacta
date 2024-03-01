@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Tela_infos_do_cadastro">
+    tools:context=".views.Tela_infos_do_cadastro">
 
     <ScrollView
         android:layout_width="match_parent"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".views.MainActivity">
 
     <TextView
             android:id="@+id/textTitulo"
@@ -29,11 +29,12 @@
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="35dp"
         android:clickable="true"
-        app:backgroundTint="@color/white"
+        app:backgroundTint="@color/black"
         app:fabSize="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_car_black" />
+        app:srcCompat="@drawable/ic_car"
+        android:layout_marginRight="30dp" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/buttonAddNewPerson"
@@ -42,11 +43,12 @@
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="25dp"
         android:clickable="true"
-        app:backgroundTint="@color/white"
+        app:backgroundTint="@color/black"
         app:fabSize="mini"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/buttonCorridaDiaria"
-        app:srcCompat="@drawable/ic_add_black" />
+        app:srcCompat="@drawable/ic_add"
+        android:layout_marginRight="5dp" />
 
     <ImageButton
         android:id="@+id/buttonConfig"
@@ -57,7 +59,8 @@
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baseline_settings_24" />
+        app:srcCompat="@drawable/baseline_settings_24"
+        android:layout_marginRight="20dp" />
 
     <TextView
         android:id="@+id/textValorTotal"
@@ -66,7 +69,7 @@
         android:layout_marginTop="48dp"
         android:foregroundGravity="center"
         android:gravity="center"
-        android:text="TOTAL\nR$: --,--"
+        android:text="TOTAL A SER PAGO\nR$: --,--"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"

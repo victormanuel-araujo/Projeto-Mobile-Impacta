@@ -1,8 +1,7 @@
-package br.com.application.carbill;
+package br.com.application.carbill.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteStatement;
@@ -16,6 +15,10 @@ import android.widget.TextView;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+
+import br.com.application.carbill.models.PessoaResumoTelaDiaria;
+import br.com.application.carbill.R;
+import br.com.application.carbill.adapters.AdapterTuplaPessoaTelaDiaria;
 
 
 public class TelaDiaria extends AppCompatActivity {

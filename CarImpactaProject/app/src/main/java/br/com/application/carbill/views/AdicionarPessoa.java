@@ -1,4 +1,4 @@
-package br.com.application.carbill;
+package br.com.application.carbill.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import br.com.application.carbill.R;
 
 public class AdicionarPessoa extends AppCompatActivity {
     //LEMBRAR DE FAZER O OVERRIDE ONRESUME PARA ATUALIZAR

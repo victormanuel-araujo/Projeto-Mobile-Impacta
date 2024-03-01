@@ -1,4 +1,4 @@
-package br.com.application.carbill;
+package br.com.application.carbill.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,6 +10,9 @@ import android.widget.CompoundButton;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
+import br.com.application.carbill.models.PessoaResumoTelaDiaria;
+import br.com.application.carbill.R;
 
 public class AdapterTuplaPessoaTelaDiaria extends ArrayAdapter<PessoaResumoTelaDiaria> {
 

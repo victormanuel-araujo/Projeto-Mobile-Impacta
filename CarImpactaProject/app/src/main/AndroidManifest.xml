@@ -12,39 +12,39 @@
         android:theme="@style/AppTheme"
         tools:targetApi="31">
         <activity
-            android:name=".Tela_infos_do_cadastro"
+            android:name=".views.Tela_infos_do_cadastro"
             android:exported="false"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".TelaContatos"
+            android:name=".views.TelaContatos"
             android:exported="false"
-            android:parentActivityName=".TelaConfiguracoes"
+            android:parentActivityName=".views.TelaConfiguracoes"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".AdicionarPessoa"
+            android:name=".views.AdicionarPessoa"
             android:exported="false"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName=".views.MainActivity"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".TelaConfiguracoes"
+            android:name=".views.TelaConfiguracoes"
             android:exported="false"
             android:label="Configurações"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName=".views.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".TelaInfoPerson"
+            android:name=".views.TelaInfoPerson"
             android:exported="false"
             android:label="Adicionar Pessoa"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName=".views.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".TelaDiaria"
+            android:name=".views.TelaDiaria"
             android:exported="false"
             android:label="Caronas do Dia"
-            android:parentActivityName=".MainActivity"
+            android:parentActivityName=".views.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".MainActivity"
+            android:name=".views.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>

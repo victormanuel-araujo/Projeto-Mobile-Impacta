@@ -1,4 +1,4 @@
-package br.com.application.carbill;
+package br.com.application.carbill.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -8,6 +8,9 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+
+import br.com.application.carbill.R;
+import br.com.application.carbill.models.ClassPessoa;
 
 public class AdapterTuplaTodasAsPessoas extends ArrayAdapter<ClassPessoa> {
 

@@ -1,4 +1,4 @@
-package br.com.application.carbill;
+package br.com.application.carbill.models;
 
 public class PessoaResumoTelaInical {
     private String nome;

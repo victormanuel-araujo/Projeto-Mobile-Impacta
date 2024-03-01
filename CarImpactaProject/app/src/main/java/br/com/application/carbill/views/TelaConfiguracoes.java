@@ -1,4 +1,4 @@
-package br.com.application.carbill;
+package br.com.application.carbill.views;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import br.com.application.carbill.R;
 
 public class TelaConfiguracoes extends AppCompatActivity {
 
